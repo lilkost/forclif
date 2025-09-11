@@ -1,0 +1,13 @@
+import { scrollTopFn } from "./components/scrollTop.js";
+import { createPhoneMaskFn } from "./components/maskInput.js";
+import { createSliderFn } from "./components/slider.js";
+import { createCounterNodeFn } from "./components/counter.js";
+import { deleteItemBasketFn } from "./components/deleteItem.js";
+import { createAccordionFn } from "./components/accordion.js";
+
+scrollTopFn();
+createPhoneMaskFn();
+createSliderFn();
+createCounterNodeFn();
+deleteItemBasketFn();
+createAccordionFn();
