@@ -16,6 +16,16 @@ export const createSliderFn = () => {
                 spaceBetween: 20,
             }
         ],
+        [
+            document.querySelector(".about-photos__slider"),{
+                spaceBetween: 20,
+                direction: "horizontal",
+                    slidesPerView: "auto",
+                    centeredSlides: true,
+                    loop: true,
+
+                }
+        ]
 
     ]
     // функция конструктор для создания сладеров
@@ -61,7 +71,9 @@ export const createSliderFn = () => {
                     delay: 5000,
                 },
                 pagination: {
-                    el: ".detail__big-pagination"
+                    el: ".detail__big-pagination",
+                    type: 'bullets',
+                    clickable: true
                 },
                 thumbs: {
                     swiper: swiper,
