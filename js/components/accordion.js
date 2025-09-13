@@ -1,6 +1,7 @@
 export const createAccordionFn = () => {
     const accordionNode = document.querySelectorAll(".accordion");
     const accordionHeader = document.querySelectorAll(".header-catalog__name-category");
+    const accordionCatalog = document.querySelectorAll(".catalog__aside-accordion");
 
     if(accordionNode){
             accordionNode.forEach(accordion=> {
@@ -34,6 +35,27 @@ export const createAccordionFn = () => {
                     }
                 })
             });
+        })
+    }
+
+    if(accordionCatalog){
+        accordionCatalog.forEach(accordion=>{
+            const topNode = accordion.querySelector(".catalog__aside-accordion-top");
+            const btnAll = accordion.querySelector(".catalog__aside-accordion-btn-all");
+
+            topNode.addEventListener("click", ()=>{
+                accordion.classList.toggle("is-open");
+            });
+
+            if(btnAll){
+                const labels = document.querySelectorAll(".catalog__aside-accordion-label");
+                btnAll.addEventListener("click", ()=>{
+                    btnAll.style.display = "none";
+                    labels.forEach(lb=>{
+                        lb.classList.remove("is-hidden");
+                    })
+                }); 
+            }
         })
     }
 

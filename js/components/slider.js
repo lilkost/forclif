@@ -14,17 +14,46 @@ export const createSliderFn = () => {
                 },
                 slidesPerView: 4,
                 spaceBetween: 20,
+                breakpoints: {
+                    1321: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                    992:{
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    480:{
+                        slidesPerView: 1.7,
+                        spaceBetween: 20
+                    },
+                    280:{
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    }
+                }
             }
         ],
         [
             document.querySelector(".about-photos__slider"),{
                 spaceBetween: 20,
                 direction: "horizontal",
-                    slidesPerView: "auto",
-                    centeredSlides: true,
-                    loop: true,
-
+                slidesPerView: "auto",
+                centeredSlides: true,
+                loop: true,
+                breakpoints: {
+                    481:{
+                        spaceBetween: 20,
+                    },
+                    280:{
+                        spaceBetween: 10,
+                    }
                 }
+            }
         ]
 
     ]
