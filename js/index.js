@@ -7,6 +7,7 @@ import { createAccordionFn } from "./components/accordion.js";
 import { modal } from "./components/modal.js";
 import { headerFn } from "./components/headerFn.js";
 import { sortModal } from "./components/sort.js";
+import { cookieModalFn } from "./components/cookie-modal.js";
 
 scrollTopFn();
 createPhoneMaskFn();
@@ -17,3 +18,4 @@ createAccordionFn();
 modal();
 headerFn();
 sortModal();
+cookieModalFn();
