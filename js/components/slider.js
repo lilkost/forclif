@@ -75,9 +75,9 @@ export const createSliderFn = () => {
             if(sliderNode && sliderOptions) {
                 createSlider(sliderNode, sliderOptions);
             }
-            else {
-                console.error(`Ошибка генерации, нету одной из двух частей слайдера: slider - ${sliderNode}, список опций - ${sliderOptions}`)
-            }
+            // else {
+            //     // console.error(`Ошибка генерации, нету одной из двух частей слайдера: slider - ${sliderNode}, список опций - ${sliderOptions}`)
+            // }
         });
     }
 
