@@ -8,6 +8,7 @@ import { modal } from "./components/modal.js";
 import { headerFn } from "./components/headerFn.js";
 import { sortModal } from "./components/sort.js";
 import { cookieModalFn } from "./components/cookie-modal.js";
+import { filterCatalogFn } from "./components/filterCatalog.js";
 
 scrollTopFn();
 createPhoneMaskFn();
@@ -19,3 +20,4 @@ modal();
 headerFn();
 sortModal();
 cookieModalFn();
+filterCatalogFn();

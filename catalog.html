@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/media.min.css">
 </head>
 
+
 <body>
     <!-- wrapper -->
     <div class="wrapper">
@@ -230,189 +231,218 @@
             </div>
             <div class="catalog__inner container section_mb">
                 <aside class="catalog__aside">
-                    <div class="catalog__aside-box">
-                        <div class="catalog__aside-accordion">
-                            <div class="catalog__aside-accordion-top">
-                                цена
-                                <div class="catalog__aside-accordion-top-icon">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 12.5L10 7.5L15 12.5" stroke="#EA262A" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
+                    <button class="catalog__aside-close-btn" type="button" aria-label="Закрыть фильтр">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                                fill="#0F1729" />
+                        </svg>
+                    </button>
+                    <form action="">
+                        <div class="catalog__aside-box">
+                            <div class="catalog__aside-accordion">
+                                <div class="catalog__aside-accordion-top">
+                                    цена
+                                    <div class="catalog__aside-accordion-top-icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 12.5L10 7.5L15 12.5" stroke="#EA262A" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="catalog__aside-accordion-body">
-                                <div class="catalog__aside-accordion-price">
-                                    <input type="number" min="312" max="312393" class="catalog__aside-accordion-price-input" value="312" placeholder="312">
-                                    <input type="number" min="312" max="312393" class="catalog__aside-accordion-price-input" value="312393" placeholder="312393">
+                                <div class="catalog__aside-accordion-body">
+                                    <div class="catalog__aside-accordion-price">
+                                        <input type="number" min="312" max="312393"
+                                            class="catalog__aside-accordion-price-input" value="312" placeholder="312">
+                                        <input type="number" min="312" max="312393"
+                                            class="catalog__aside-accordion-price-input" value="312393"
+                                            placeholder="312393">
+                                    </div>
+                                    <div class="range"></div>
                                 </div>
-                                <div class="range"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="catalog__aside-box">
-                        <div class="catalog__aside-accordion">
-                            <div class="catalog__aside-accordion-top">
-                                тип запчастей
-                                <div class="catalog__aside-accordion-top-icon">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 12.5L10 7.5L15 12.5" stroke="#EA262A" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
+                        <div class="catalog__aside-box">
+                            <div class="catalog__aside-accordion">
+                                <div class="catalog__aside-accordion-top">
+                                    тип запчастей
+                                    <div class="catalog__aside-accordion-top-icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 12.5L10 7.5L15 12.5" stroke="#EA262A" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="catalog__aside-accordion-body">
+                                    <label for="checkbox1" class="catalog__aside-accordion-label">
+                                        <input id="checkbox1" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        Аксессуары
+                                    </label>
+                                    <label for="checkbox2" class="catalog__aside-accordion-label">
+                                        <input id="checkbox2" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        Вилы на погрузчик
+                                    </label>
+                                    <label for="checkbox3" class="catalog__aside-accordion-label">
+                                        <input id="checkbox3" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        Выхлопная система
+                                    </label>
                                 </div>
                             </div>
-                            <div class="catalog__aside-accordion-body">
-                                <label for="checkbox1" class="catalog__aside-accordion-label">
-                                    <input id="checkbox1" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    Аксессуары
-                                </label>
-                                <label for="checkbox2" class="catalog__aside-accordion-label">
-                                    <input id="checkbox2" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    Вилы на погрузчик
-                                </label>
-                                <label for="checkbox3" class="catalog__aside-accordion-label">
-                                    <input id="checkbox3" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    Выхлопная система
-                                </label>
-                            </div>
                         </div>
-                    </div>
-                    <div class="catalog__aside-box">
-                        <div class="catalog__aside-accordion">
-                            <div class="catalog__aside-accordion-top">
-                                марка погрузчика
-                                <div class="catalog__aside-accordion-top-icon">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 12.5L10 7.5L15 12.5" stroke="#EA262A" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
+                        <div class="catalog__aside-box">
+                            <div class="catalog__aside-accordion">
+                                <div class="catalog__aside-accordion-top">
+                                    марка погрузчика
+                                    <div class="catalog__aside-accordion-top-icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 12.5L10 7.5L15 12.5" stroke="#EA262A" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="catalog__aside-accordion-body">
+                                    <label for="checkbox4" class="catalog__aside-accordion-label">
+                                        <input id="checkbox4" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        Daewoo/Doosan
+                                    </label>
+                                    <label for="checkbox5" class="catalog__aside-accordion-label">
+                                        <input id="checkbox5" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        Hangcha
+                                    </label>
+                                    <label for="checkbox6" class="catalog__aside-accordion-label">
+                                        <input id="checkbox6" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        Hyster
+                                    </label>
+                                    <label for="checkbox7" class="catalog__aside-accordion-label is-hidden">
+                                        <input id="checkbox7" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        Jungheinrich
+                                    </label>
+                                    <label for="checkbox8" class="catalog__aside-accordion-label is-hidden">
+                                        <input id="checkbox8" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        Nissan
+                                    </label>
+                                    <button class="catalog__aside-accordion-btn-all text" type="button">Еще 2</button>
                                 </div>
                             </div>
-                            <div class="catalog__aside-accordion-body">
-                                <label for="checkbox4" class="catalog__aside-accordion-label">
-                                    <input id="checkbox4" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    Daewoo/Doosan
-                                </label>
-                                <label for="checkbox5" class="catalog__aside-accordion-label">
-                                    <input id="checkbox5" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    Hangcha
-                                </label>
-                                <label for="checkbox6" class="catalog__aside-accordion-label">
-                                    <input id="checkbox6" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    Hyster
-                                </label>
-                                <label for="checkbox7" class="catalog__aside-accordion-label is-hidden">
-                                    <input id="checkbox7" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    Jungheinrich
-                                </label>
-                                <label for="checkbox8" class="catalog__aside-accordion-label is-hidden">
-                                    <input id="checkbox8" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    Nissan
-                                </label>
-                                <button class="catalog__aside-accordion-btn-all text" type="button">Еще 2</button>
-                            </div>
                         </div>
-                    </div>
-                    <div class="catalog__aside-box">
-                        <div class="catalog__aside-accordion">
-                            <div class="catalog__aside-accordion-top">
-                                модель погрузчика
-                                <div class="catalog__aside-accordion-top-icon">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 12.5L10 7.5L15 12.5" stroke="#EA262A" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
+                        <div class="catalog__aside-box">
+                            <div class="catalog__aside-accordion">
+                                <div class="catalog__aside-accordion-top">
+                                    модель погрузчика
+                                    <div class="catalog__aside-accordion-top-icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 12.5L10 7.5L15 12.5" stroke="#EA262A" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="catalog__aside-accordion-body">
+                                    <label for="checkbox10" class="catalog__aside-accordion-label">
+                                        <input id="checkbox10" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        01ZPJ01A15U
+                                    </label>
+                                    <label for="checkbox11" class="catalog__aside-accordion-label">
+                                        <input id="checkbox11" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        02-6FDF15
+                                    </label>
+                                    <label for="checkbox12" class="catalog__aside-accordion-label">
+                                        <input id="checkbox12" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        02-7FD15
+                                    </label>
                                 </div>
                             </div>
-                            <div class="catalog__aside-accordion-body">
-                                <label for="checkbox10" class="catalog__aside-accordion-label">
-                                    <input id="checkbox10" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    01ZPJ01A15U
-                                </label>
-                                <label for="checkbox11" class="catalog__aside-accordion-label">
-                                    <input id="checkbox11" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    02-6FDF15
-                                </label>
-                                <label for="checkbox12" class="catalog__aside-accordion-label">
-                                    <input id="checkbox12" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    02-7FD15
-                                </label>
-                            </div>
                         </div>
-                    </div>
-                    <div class="catalog__aside-box">
-                        <div class="catalog__aside-accordion">
-                            <div class="catalog__aside-accordion-top">
-                                Год выпуска
-                                <div class="catalog__aside-accordion-top-icon">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 12.5L10 7.5L15 12.5" stroke="#EA262A" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
+                        <div class="catalog__aside-box">
+                            <div class="catalog__aside-accordion">
+                                <div class="catalog__aside-accordion-top">
+                                    Год выпуска
+                                    <div class="catalog__aside-accordion-top-icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 12.5L10 7.5L15 12.5" stroke="#EA262A" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="catalog__aside-accordion-body">
+                                    <label for="checkbox13" class="catalog__aside-accordion-label">
+                                        <input id="checkbox13" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        2012-2013
+                                    </label>
+                                    <label for="checkbox14" class="catalog__aside-accordion-label">
+                                        <input id="checkbox14" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        2012-2013
+                                    </label>
+                                    <label for="checkbox15" class="catalog__aside-accordion-label">
+                                        <input id="checkbox15" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        2012-2013
+                                    </label>
                                 </div>
                             </div>
-                            <div class="catalog__aside-accordion-body">
-                                <label for="checkbox13" class="catalog__aside-accordion-label">
-                                    <input id="checkbox13" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    2012-2013
-                                </label>
-                                <label for="checkbox14" class="catalog__aside-accordion-label">
-                                    <input id="checkbox14" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    2012-2013
-                                </label>
-                                <label for="checkbox15" class="catalog__aside-accordion-label">
-                                    <input id="checkbox15" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    2012-2013
-                                </label>
-                            </div>
                         </div>
-                    </div>
-                    <div class="catalog__aside-box">
-                        <div class="catalog__aside-accordion">
-                            <div class="catalog__aside-accordion-top">
-                                наличие
-                                <div class="catalog__aside-accordion-top-icon">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5 12.5L10 7.5L15 12.5" stroke="#EA262A" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
+                        <div class="catalog__aside-box">
+                            <div class="catalog__aside-accordion">
+                                <div class="catalog__aside-accordion-top">
+                                    наличие
+                                    <div class="catalog__aside-accordion-top-icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 12.5L10 7.5L15 12.5" stroke="#EA262A" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="catalog__aside-accordion-body">
+                                    <label for="checkbox17" class="catalog__aside-accordion-label">
+                                        <input id="checkbox17" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        Только в наличии
+                                    </label>
+                                    <label for="checkbox18" class="catalog__aside-accordion-label">
+                                        <input id="checkbox18" type="checkbox">
+                                        <div class="catalog__aside-accordion-decor"></div>
+                                        Под заказ
+                                    </label>
                                 </div>
                             </div>
-                            <div class="catalog__aside-accordion-body">
-                                <label for="checkbox17" class="catalog__aside-accordion-label">
-                                    <input id="checkbox17" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    Только в наличии
-                                </label>
-                                <label for="checkbox18" class="catalog__aside-accordion-label">
-                                    <input id="checkbox18" type="checkbox">
-                                    <div class="catalog__aside-accordion-decor"></div>
-                                    Под заказ
-                                </label>
-                            </div>
                         </div>
-                    </div>
+                        <div class="catalog__aside-buttons">
+                            <button class="catalog__aside-send btn btn_dark" type="submit">
+                                Применить
+                            </button>
+                            <button class="catalog__aside-reset text color-dark" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                    <path
+                                        d="M22.719 12A10.719 10.719 0 0 1 1.28 12h.838a9.916 9.916 0 1 0 1.373-5H8v1H2V2h1v4.2A10.71 10.71 0 0 1 22.719 12z" />
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                </svg>
+                                Сбросить
+                            </button>
+                        </div>
+                    </form>
                 </aside>
+                <button class="catalog__btn-open btn btn_dark" type="button">
+                    Фильтры
+                </button>
                 <div class="catalog__content">
                     <div class="catalog__list">
                         <div class="catalog__item">
@@ -1771,13 +1801,13 @@
                     'max': [317393]
                 }
             })
-            range.on('set.one', function (e) { 
+            range.on('set.one', function (e) {
                 inputs[0].value = Math.round(e[0])
                 inputs[1].value = Math.round(e[1])
             });
 
-            inputs.forEach(input=>{
-                input.addEventListener("change",(e)=>{
+            inputs.forEach(input => {
+                input.addEventListener("change", (e) => {
                     console.log(inputs[0].value + ' min', inputs[1].value + ' max', e.target.value)
 
                     // if(input.min > e.target.value) input.value = input.min;
